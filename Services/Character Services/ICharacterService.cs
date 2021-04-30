@@ -2,14 +2,16 @@ using Microsoft.AspNetCore.Mvc;
 using dotnet_rpg.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+
 namespace dotnet_rpg.Services.Character_Services
 {
     public interface ICharacterService
     {
-        List<Character> GetAllCharacters();
-        Character GetCharacterById(int id);
+        Task<List<Character>> GetAllCharacters();
+        Task<Character> GetCharacterById(int id);
 
-        List<Character> AddCharacter(Character newCharacter);
+        Task<List<Character>> AddCharacter(Character newCharacter);
          
     }
 }
