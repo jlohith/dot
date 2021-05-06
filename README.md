@@ -1,2 +1,2 @@
 # dot
-Implementation od dotnet wepapi using dotnet core
+Implementation od dotnet webapi using dotnet core
